@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Stats from "../../components/stats";
 
 const Main = () => {
-    return (
-        <div>
-            Main Page
-        </div>
-    )
-}
+  return (
+    <div>
+      <Stats username="marufAlAslam" />
+    </div>
+  );
+};
 
-export default Main
+export default Main;
