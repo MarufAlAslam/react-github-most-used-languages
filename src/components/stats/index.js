@@ -77,9 +77,12 @@ const Stats = ({ username }) => {
   }, [username]);
 
   return loading ? (
-    "Loading..."
+    // spinner / loader
+    <div className="flex justify-center items-center mt-[100px]">
+      <div className="animate-spin rounded-full h-40 w-40 border-t-2 border-b-2 border-white-900"></div>
+    </div>
   ) : (
-    <LanguageCard languageStats={languageStats} />
+    <LanguageCard languageStats={languageStats} username={username} />
   );
 };
 
